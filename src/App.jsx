@@ -8,6 +8,7 @@ function AnswerCard({ answer }) {
       {answer.artist_name && <div>아티스트: {answer.artist_name}</div>}
       {answer.music_name && <div>노래: {answer.music_name}</div>}
       {answer.album_name && <div>앨범: {answer.album_name}</div>}
+      {answer.embed_url && <MediaEmbed url={answer.embed_url} />}
     </div>
   );
 }
@@ -36,3 +37,48 @@ export default function App() {
     </main>
   );
 }
+
+function MediaEmbed({ url }) {
+  if (!url) return null;
+
+  // 간단한 안전장치: embed 도메인만 허용(원하면 확장 가능)
+  const allowed = [
+    "https://open.spotify.com/embed/",
+    "https://www.youtube.com/embed/",
+  ];
+
+  const SPOTIFY_PREFIX = "https://open.spotify.com/embed/";
+  const embedUrl = SPOTIFY_PREFIX + url;
+
+  const ok = allowed.some((p) => embedUrl.startsWith(p));
+  if (!ok) return <div style={{ color: "#777" }}>임베드 URL 형식이 아닙니다.</div>;
+
+  // const isSpotify = url.startsWith("https://open.spotify.com/embed/");
+  // const height = isSpotify ? 152 : 315;
+  const height = 152
+
+  return (
+    <iframe
+      src={embedUrl}
+      width="100%"
+      height={height}
+      frameBorder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+      style={{ borderRadius: 12, marginTop: 10 }}
+      title="music-embed"
+    />
+    // <iframe
+    //   data-testid="embed-iframe"
+    //   style="border-radius:12px"
+    //   src="https://open.spotify.com/embed/album/0xrAlQfw3MZ5QGhw2NptQt?utm_source=generator"
+    //   width="100%"
+    //   height="352"
+    //   frameBorder="0"
+    //   allowfullscreen=""
+    //   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    //   loading="lazy">
+    // </iframe>
+  );
+}
+
