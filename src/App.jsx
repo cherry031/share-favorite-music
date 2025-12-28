@@ -9,7 +9,7 @@ function AnswerCard({ type, answer }) {
       {answer.artist_name && <div>아티스트: {answer.artist_name}</div>}
       {answer.track_name && <div>노래: {answer.track_name}</div>}
       {answer.album_name && <div>앨범: {answer.album_name}</div>}
-      {<AutoSpotifyEmbed type={type} artistName={answer.artist_name} trackName={answer.track_name} albumName={answer.album_name}/>}
+      {<AutoSpotifyEmbed type={type} artistName={answer.artist_name} trackName={answer.track_name} albumName={answer.album_name} tag={answer.tag}/>}
     </div>
   );
 }

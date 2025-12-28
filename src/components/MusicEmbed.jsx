@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-export default function AutoSpotifyEmbed({ type, artistName, trackName, albumName }) {
+export default function AutoSpotifyEmbed({ type, artistName, trackName, albumName, tag }) {
   const [embedUrl, setEmbedUrl] = useState(null);
   const [error, setError] = useState(null);
   
-  const q = [artistName, trackName, albumName]
+  const q = [artistName, trackName, albumName, tag]
     .filter(Boolean)
     .join(" ");
 

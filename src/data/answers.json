@@ -84,17 +84,20 @@
             {
                 "name": "새싹",
                 "artist_name": "RADWIMPS",
-                "track_name": "Sparkle - movie ver."
+                "track_name": "Sparkle - movie ver.",
+                "description": "너의 이름은."
             },
             {
                 "name": "쭈굴",
                 "artist_name": "Soushi Sakiyama",
-                "track_name": "燈(Akari)"
+                "track_name": "燈(Akari)",
+                "description": "주술회전 2기: 회옥・옥절"
             },
             {
                 "name": "배추",
                 "artist_name": "Rosa Walton, Hallie Coggins",
-                "track_name": "I Really Want to Stay at Your House"
+                "track_name": "I Really Want to Stay at Your House",
+                "description": "사이버펑크: 엣지러너"
             }
         ]
     },
@@ -125,18 +128,22 @@
         "answers": [
             {
                 "name": "새싹",
-                "artist_name": "꿈빛파티시엘",
-                "track_name": "꿈빛파티시엘 OST"
+                "artist_name": "꿈빛 파티시엘",
+                "track_name": "꿈빛 파티시엘 OST",
+                "description": "꿈빛 파티시엘",
+                "tag": "꿈꿔온 파티쉐르"
             },
             {
                 "name": "쭈굴",
                 "artist_name": "Keira Knightley",
-                "track_name": "Tell Me If You Wanna Go Home"
+                "track_name": "Tell Me If You Wanna Go Home",
+                "description": "비긴 어게인 (2014)"
             },
             {
                 "name": "배추",
                 "artist_name": "Donny Osmond, Chorus - Mulan, Disney",
-                "track_name": "I'll Make a Man Out of You"
+                "track_name": "I'll Make a Man Out of You",
+                "description": "뮬란 (1998)"
             }
         ]
     },
@@ -168,7 +175,8 @@
             {
                 "name": "새싹",
                 "artist_name": "Peach Pit",
-                "track_name": "Peach Pit"
+                "track_name": "Peach Pit",
+                "tag": "피치핏"
             },
             {
                 "name": "쭈굴",
@@ -204,7 +212,8 @@
             {
                 "name": "4위",
                 "artist_name": "Vaundy",
-                "track_name": "東京フラッシュ"
+                "track_name": "東京フラッシュ",
+                "tag": "도쿄 플래시"
             }
         ]
     },
