@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import data from "./data/answers.json";
 import DateTimeLine from "./DateTimeLine.jsx";
-import AutoSpotifyEmbed from "./components/MusicEmbed.jsx";
+import MusicEmbed from "./components/MusicEmbed.jsx";
 
 function AnswerCard({ type, answer }) {
   return (
@@ -12,7 +12,8 @@ function AnswerCard({ type, answer }) {
       {answer.artist_name && <div style={{ fontSize: 17, marginBottom: 6 }}><b>🎤 {answer.artist_name}</b></div>}
       {answer.track_name && <div style={{ fontSize: 16, marginBottom: 6 }}>🎵 {answer.track_name}</div>}
       {answer.album_name && <div style={{ fontSize: 16, marginBottom: 6 }}>💿 {answer.album_name}</div>}
-      <AutoSpotifyEmbed type={type} artistName={answer.artist_name} trackName={answer.track_name} albumName={answer.album_name} tag={answer.tag}/>
+      
+      <MusicEmbed answer={answer} type={type}/>
     </div>
   );
 }

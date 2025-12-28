@@ -9,7 +9,11 @@
                 "answers": [
                     {
                         "name": "🌱",
-                        "artist_name": "요네즈 켄시"
+                        "artist_name": "요네즈 켄시",
+                        "embed": {
+                            "provider": "spotify",
+                            "id": "1snhtMLeb2DYoMOcVbb8iB?utm_source=generator"
+                        }
                     },
                     {
                         "name": "🐸",
@@ -111,8 +115,13 @@
                 "answers": [
                     {
                         "name": "🌱",
-                        "artist_name": "Amatsuki(天月)",
-                        "track_name": "小さな恋のうた (작은 사랑의 노래)"
+                        "artist_name": "天月(Amatsuki)",
+                        "track_name": "小さな恋のうた (작은 사랑의 노래)",
+                        "embed": {
+                            "provider": "youtube",
+                            "id": "Woorod1gJ_w",
+                            "url": "https://www.youtube.com/watch?v=Woorod1gJ_w&pp=ygUk7JWE66eI7Lig7YKkIOyekeydgCDsgqzrnpHsnZgg64W4656Y"
+                        }
                     },
                     {
                         "name": "🐸",
@@ -132,10 +141,14 @@
                 "answers": [
                     {
                         "name": "🌱",
-                        "artist_name": "꿈빛 파티시엘",
-                        "track_name": "꿈빛 파티시엘 OST",
+                        "artist_name": "꿈빛 파티시엘 OST",
+                        "track_name": "내 꿈은 파티시엘",
                         "description": "꿈빛 파티시엘",
-                        "tag": "꿈꿔온 파티쉐르"
+                        "embed": {
+                            "provider": "youtube",
+                            "id": "KdjPwBgtEbk",
+                            "url": "https://www.youtube.com/watch?v=KdjPwBgtEbk&pp=ygUV64K06r-I7J2A7YyM7Yuw7Iuc7JeY"
+                        }
                     },
                     {
                         "name": "🐸",
