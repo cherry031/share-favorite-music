@@ -1,18 +1,26 @@
 import { useEffect, useState } from "react";
 
-export default function AutoSpotifyArtistEmbed({ artistName }) {
+export default function AutoSpotifyEmbed({ type, artistName, trackName, albumName }) {
   const [embedUrl, setEmbedUrl] = useState(null);
   const [error, setError] = useState(null);
+  
+  const q = [artistName, trackName, albumName]
+    .filter(Boolean)
+    .join(" ");
+
 
   useEffect(() => {
-    if (!artistName) return;
+    if (!["track", "album", "artist"].includes(type)) return;
+
+    if (!q || !type) return;
+
 
     (async () => {
       try {
         setError(null);
         setEmbedUrl(null);
 
-        const res = await fetch(`/api/spotify/search?type=artist&q=${encodeURIComponent(artistName)}`);
+        const res = await fetch(`/api/spotify/search?type=${encodeURIComponent(type)}&q=${encodeURIComponent(q)}`);
         const data = await res.json();
 
         if (!res.ok) throw new Error(data?.error || "Search failed");
@@ -21,7 +29,7 @@ export default function AutoSpotifyArtistEmbed({ artistName }) {
         setError(String(e.message || e));
       }
     })();
-  }, [artistName]);
+  }, [q, type]);
 
   if (error) return <div style={{ color: "#777" }}>Spotify 검색 실패: {error}</div>;
   if (!embedUrl) return <div style={{ color: "#777" }}>검색 중...</div>;

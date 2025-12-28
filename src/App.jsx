@@ -1,15 +1,15 @@
 import data from "./data/answers.json";
-import AutoSpotifyArtistEmbed from "./components/MusicEmbed";
+import AutoSpotifyEmbed from "./components/MusicEmbed";
 
-function AnswerCard({ answer }) {
+function AnswerCard({ type, answer }) {
   return (
     <div style={{ border: "1px solid #ddd", borderRadius: 12, padding: 12 }}>
       <div style={{ fontWeight: 700 }}>{answer.name}</div>
 
-      {answer.artist_name && !answer.music_name && <div>아티스트: {answer.artist_name}</div>}
-      {answer.music_name && <div>아티스트: {answer.artist_name}<br/>노래: {answer.music_name}</div>}
+      {answer.artist_name && <div>아티스트: {answer.artist_name}</div>}
+      {answer.track_name && <div>노래: {answer.track_name}</div>}
       {answer.album_name && <div>앨범: {answer.album_name}</div>}
-      {answer.artist_name && <AutoSpotifyArtistEmbed artistName={answer.artist_name} />}
+      {<AutoSpotifyEmbed type={type} artistName={answer.artist_name} trackName={answer.track_name} albumName={answer.album_name}/>}
     </div>
   );
 }
@@ -21,7 +21,7 @@ function QuestionBlock({ item }) {
 
       <div style={{ display: "grid", gap: 12 }}>
         {item.answers.map((ans, idx) => (
-          <AnswerCard key={`${ans.name}-${idx}`} answer={ans} />
+          <AnswerCard key={`${ans.name}-${idx}`} type={item.type} answer={ans} />
         ))}
       </div>
     </section>

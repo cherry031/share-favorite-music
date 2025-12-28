@@ -1,14 +1,15 @@
 [
     {
         "question": "가장 좋아하는 아티스트는?",
+        "type": "artist",
         "answers": [
             {
                 "name": "새싹",
-                "artist_name": "Kenshi Yonezu"
+                "artist_name": "요네즈 켄시"
             },
             {
                 "name": "쭈굴",
-                "artist_name": "Kenshi Yonezu"
+                "artist_name": "요네즈 켄시"
             },
             {
                 "name": "배추",
@@ -18,6 +19,7 @@
     },
     {
         "question": "평생 한 아티스트의 노래만 들을 수 있다면?",
+        "type": "artist",
         "answers": [
             {
                 "name": "새싹",
@@ -25,36 +27,38 @@
             },
             {
                 "name": "쭈굴",
-                "artist_name": "Kenshi Yonezu"
+                "artist_name": "요네즈 켄시"
             },
             {
                 "name": "배추",
-                "artist_name": "Gen Hoshino"
+                "artist_name": "호시노 겐"
             }
         ]
     },
     {
         "question": "가장 좋아하는 노래는?",
+        "type": "track",
         "answers": [
             {
                 "name": "새싹",
                 "artist_name": "김마리",
-                "music_name": "너의 이름은 맑음"
+                "track_name": "너의 이름은 맑음"
             },
             {
                 "name": "쭈굴",
                 "artist_name": "Charlie Burg",
-                "music_name": "June"
+                "track_name": "June"
             },
             {
                 "name": "배추",
                 "artist_name": "실리카겔",
-                "music_name": "NO PAIN"
+                "track_name": "NO PAIN"
             }
         ]
     },
     {
         "question": "가장 좋아하는 앨범은?",
+        "type": "album",
         "answers": [
             {
                 "name": "새싹",
@@ -75,101 +79,158 @@
     },
     {
         "question": "가장 좋아하는 애니메이션 노래는?",
+        "type": "track",
         "answers": [
             {
                 "name": "새싹",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "RADWIMPS",
+                "track_name": "Sparkle - movie ver."
             },
             {
                 "name": "쭈굴",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Soushi Sakiyama",
+                "track_name": "燈(Akari)"
             },
             {
                 "name": "배추",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Rosa Walton, Hallie Coggins",
+                "track_name": "I Really Want to Stay at Your House"
             }
         ]
     },
     {
         "question": "가장 좋아하는 J-pop은?",
+        "type": "track",
         "answers": [
             {
                 "name": "새싹",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Amatsuki(天月)",
+                "track_name": "小さな恋のうた (작은 사랑의 노래)"
             },
             {
                 "name": "쭈굴",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Toshinobu Kubota, Naomi Campbell",
+                "track_name": "La·La·La Love Song"
             },
             {
                 "name": "배추",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "ZUTOMAYO",
+                "track_name": "秒針を噛む (초침을 씹다)"
             }
         ]
     },
     {
         "question": "가장 좋아하는 OST는?",
+        "type": "track",
         "answers": [
             {
                 "name": "새싹",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "꿈빛파티시엘",
+                "track_name": "꿈빛파티시엘 OST"
             },
             {
                 "name": "쭈굴",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Keira Knightley",
+                "track_name": "Tell Me If You Wanna Go Home"
             },
             {
                 "name": "배추",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Donny Osmond, Chorus - Mulan, Disney",
+                "track_name": "I'll Make a Man Out of You"
             }
         ]
     },
     {
         "question": "음악적으로 가장 잘 만들어졌다고 느끼는 노래는?",
+        "type": "track",
         "answers": [
             {
                 "name": "새싹",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "우원재, 로꼬, GRAY",
+                "track_name": "시차 (We Are)"
             },
             {
                 "name": "쭈굴",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "실리카겔",
+                "track_name": "Machineboy空"
             },
             {
                 "name": "배추",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Frank Sinatra",
+                "track_name": "Fly Me To The Moon"
             }
         ]
     },
     {
         "question": "남들은 잘 모를 것 같지만, 꼭 추천하고 싶은 노래는?",
+        "type": "track",
         "answers": [
             {
                 "name": "새싹",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "Peach Pit",
+                "track_name": "Peach Pit"
             },
             {
                 "name": "쭈굴",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "예람",
+                "track_name": "바다넘어"
             },
             {
                 "name": "배추",
-                "artist_name": "",
-                "music_name": ""
+                "artist_name": "So!YoON!",
+                "track_name": "Zz'City"
+            }
+        ]
+    },
+    {
+        "question": "J-pop 월드컵",
+        "type": "track",
+        "answers": [
+            {
+                "name": "1위",
+                "artist_name": "RADWIMPS",
+                "track_name": "Sparkle - movie ver."
+            },
+            {
+                "name": "2위",
+                "artist_name": "OFFICIAL HIGE DANDISM",
+                "track_name": "Pretender"
+            },
+            {
+                "name": "3위",
+                "artist_name": "Mrs. GREEN APPLE",
+                "track_name": "青と夏"
+            },
+            {
+                "name": "4위",
+                "artist_name": "Vaundy",
+                "track_name": "東京フラッシュ"
+            }
+        ]
+    },
+    {
+        "question": "검정치마 월드컵",
+        "type": "track",
+        "answers": [
+            {
+                "name": "1위",
+                "artist_name": "검정치마",
+                "track_name": "Antifreeze"
+            },
+            {
+                "name": "2위",
+                "artist_name": "검정치마",
+                "track_name": "Fling; Fig From France"
+            },
+            {
+                "name": "3위",
+                "artist_name": "검정치마",
+                "track_name": "EVERYTHING"
+            },
+            {
+                "name": "4위",
+                "artist_name": "검정치마",
+                "track_name": "어린양"
             }
         ]
     }
