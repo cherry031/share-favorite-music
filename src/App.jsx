@@ -3,9 +3,27 @@ import data from "./data/answers.json";
 import DateTimeLine from "./DateTimeLine.jsx";
 import MusicEmbed from "./components/MusicEmbed.jsx";
 
+function getEmbedTheme() {
+  return {
+    bg: "linear-gradient(120deg, rgba(154, 208, 245, 0.26), rgba(240, 169, 196, 0.18))",
+    border: "#ddd",
+  };
+}
+
 function AnswerCard({ type, answer }) {
+  const theme = getEmbedTheme();
+  
   return (
-    <div style={{ border: "1px solid #c7dfffff", borderRadius: 12, padding: 12, marginBottom: 8 }}>
+    <div
+      style={{
+        border: `1px solid ${theme.border}`,
+        background: theme.bg,
+        borderRadius: 12,
+        padding: 12,
+        boxShadow: "0 12px 32px rgba(15, 23, 42, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.6)",
+        marginBottom: 8
+      }}
+    >
       <div style={{ fontSize: 26, fontWeight: 700, marginBottom: 10 }}>{answer.name}</div>
 
       {answer.description && <div style={{ fontSize: 18, marginBottom: 10 }}><b>🎬 {answer.description}</b></div>}
@@ -20,7 +38,16 @@ function AnswerCard({ type, answer }) {
 
 function QuestionBlock({ item }) {
   return (
-    <section style={{ border: "1px solid #a6c9f7ff", borderRadius: 16, padding: 16 }}>
+    <section
+      style={{
+        background: "rgba(255, 255, 255, 0.29)",
+        border: "1px solid rgba(15, 23, 42, 0.06)",
+        borderLeft: "4px solid rgba(82, 176, 238, 0.2)",
+        boxShadow: "0 10px 30px rgba(15, 23, 42, 0.06)",
+        borderRadius: 16,
+        padding: 16
+      }}
+    >
       <h2 style={{ marginTop: 15, marginBottom: 18, fontSize: 30 }}>🩵 {item.question}</h2>
 
       <div style={{ display: "grid", gap: 12, marginBottom: 10 }}>
@@ -47,13 +74,14 @@ export default function App() {
     <div style={{ minHeight: "100vh" }}>
       <main
         style={{
+          background: "linear-gradient(180deg, #f7f9fc 0%, #f3f6fb 100%)",
           width: "min(1000px, 100%)",
           margin: "0 auto",
           padding: "24px 16px",
           boxSizing: "border-box"
         }}
       >
-        <h1 style={{ fontSize: 45, textAlign: "center" }}>음악 결산</h1>
+        <h1 style={{ fontSize: 45, textAlign: "center" }}>R E C O R D · Y O U R · F A V O R I T E</h1>
 
         <DateTimeLine
           dates={dates}
