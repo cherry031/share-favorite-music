@@ -24,7 +24,7 @@ function AnswerCard({ type, answer }) {
         marginBottom: 8
       }}
     >
-      <div style={{ fontSize: 26, fontWeight: 700, marginBottom: 10 }}>{answer.name}</div>
+      <div style={{ fontSize: 26, fontWeight: 700, marginBottom: -20, textAlign: "right" }}>{answer.name}</div>
 
       {answer.description && <div style={{ fontSize: 18, marginBottom: 10 }}><b>🎬 {answer.description}</b></div>}
       {answer.artist_name && <div style={{ fontSize: 17, marginBottom: 6 }}><b>🎤 {answer.artist_name}</b></div>}
