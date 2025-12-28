@@ -199,22 +199,22 @@
                 "type": "track",
                 "answers": [
                     {
-                        "name": "1위",
+                        "name": "🥇",
                         "artist_name": "RADWIMPS",
                         "track_name": "Sparkle - movie ver."
                     },
                     {
-                        "name": "2위",
+                        "name": "🥈",
                         "artist_name": "OFFICIAL HIGE DANDISM",
                         "track_name": "Pretender"
                     },
                     {
-                        "name": "3위",
+                        "name": "🥉",
                         "artist_name": "Mrs. GREEN APPLE",
                         "track_name": "青と夏"
                     },
                     {
-                        "name": "4위",
+                        "name": "4️⃣",
                         "artist_name": "Vaundy",
                         "track_name": "東京フラッシュ",
                         "tag": "도쿄 플래시"
@@ -226,22 +226,22 @@
                 "type": "track",
                 "answers": [
                     {
-                        "name": "1위",
+                        "name": "🥇",
                         "artist_name": "검정치마",
                         "track_name": "Antifreeze"
                     },
                     {
-                        "name": "2위",
+                        "name": "🥈",
                         "artist_name": "검정치마",
                         "track_name": "Fling; Fig From France"
                     },
                     {
-                        "name": "3위",
+                        "name": "🥉",
                         "artist_name": "검정치마",
                         "track_name": "EVERYTHING"
                     },
                     {
-                        "name": "4위",
+                        "name": "4️⃣",
                         "artist_name": "검정치마",
                         "track_name": "어린양"
                     }
